@@ -24,5 +24,6 @@ export default new Router()
     proxy('origin', { path: '/*path' })
   })
   .fallback(({ proxy }) => {
+    console.log('proxy')
     proxy('origin')
   })
