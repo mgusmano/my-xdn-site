@@ -1,5 +1,6 @@
 import install from '@xdn/prefetch/window/install'
 
+
 async function lateLoadContent() {
   const url = '/content' + window.location.pathname
   const res = await fetch(url)
